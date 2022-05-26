@@ -1,20 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&family=Poppins:ital,wght@0,100;0,200;1,100&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Open Sans', sans-serif;
+}
+
 body {
-    background: whitesmoke;
+    background: #dfe6e9;
     text-align: center;
 }
 
 nav {
-    background-color: rgb(128, 140, 247);
+    background-color: #00b894;
     display: inline-block;
+    border-radius: 10px;
+    margin: 1rem 0 0px 0px;
+    width: 100%;
 }
 
 .logo {
     color: black;
     text-transform: uppercase;
+    padding: 1rem;
+}
+
+.texto-central {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 1rem 0 1rem;
+    margin: 3rem;
+    font-weight: bold;
+    border-bottom-style: solid;
 }
 
 .btn {
-    background-color: aqua;
+    background-color: #1abc9c;
     border-radius: 5px;
     border: black 2px;
+    padding: 0.5rem;
+}
+
+.coluna {
+    display: flex;
+    justify-content: center;
+}
+
+.coluna .bloco {
+    padding: 1rem;
+    border-radius: 10px;
+    transition: 0.6s;
+}
+
+.coluna .bloco a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.coluna .bloco:hover {
+    transform: scale(110%);
 }

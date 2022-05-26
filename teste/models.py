@@ -21,9 +21,8 @@ class Pergunta(models.Model):
     resposta = models.IntegerField()
     prim_res = models.CharField(max_length=100)
     sec_res = models.CharField(max_length=100)
-    ter_res = models.CharField(max_length=100)
+    ter_res = models.CharField(max_length=100 , blank=True)
     quar_res = models.CharField(max_length=100 , blank=True)
-    quin_res = models.CharField(max_length=100 , blank= True)
     
     def __str__(self):
         return self.pergunta
